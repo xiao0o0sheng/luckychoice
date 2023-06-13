@@ -14,7 +14,7 @@ import requests
 with open('LuckyChoice.csv', mode='w+', encoding='gbk', newline='') as f:
     writer = csv.writer(f, delimiter=',')
     writer.writerow(['期数','A1','A2','A3','A4','A5','B1','B2'])
-    for i in range(2020, 2024):
+    for i in range(2012, 2024):
         url = f'https://www.55128.cn/zs/12_96.htm?year={i}'
         # print(url)
         response = requests.get(url)
